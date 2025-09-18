@@ -50,6 +50,7 @@ export class TransacoesController {
       const novaTransacao = await this.service.cadastrar({
         usuarioId,
         tipo,
+        data,
         valor,
         categoria,
         origem,
@@ -77,6 +78,7 @@ export class TransacoesController {
       const transacaoAtualizada = await this.service.atualizar({
         usuarioId,
         transacaoId: id,
+        data,
         tipo,
         valor,
         categoria,
