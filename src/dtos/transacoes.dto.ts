@@ -1,6 +1,7 @@
 export interface TransacaoCreateDTO {
   tipo: string;
   valor: number;
+  data: string;
   categoria: string;
   origem?: string;
   descricao?: string;
@@ -10,6 +11,7 @@ export interface TransacaoCreateDTO {
 export interface TransacaoUpdateDTO {
   tipo?: string;
   valor?: number;
+  data?: string;
   categoria?: string;
   origem?: string;
   data?: Date;
