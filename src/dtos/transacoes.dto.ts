@@ -14,7 +14,6 @@ export interface TransacaoUpdateDTO {
   data?: string;
   categoria?: string;
   origem?: string;
-  data?: Date;
   descricao?: string;
   metodoPagamento?: string;
 }
